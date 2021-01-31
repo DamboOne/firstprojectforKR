@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<title>Форма регистрации</title>
+		<link rel="stylesheet" href="Register.css" type="text/css">
+	</head>
+	<body>
+		<header>
+			<h1>+7(812)312-21-07<br>8(812)710-65-10</h1>
+		</header>
+		<div class="content">
+			<h1>Регистрация на конференцию</h1>
+			<p style="text-align:center;">
+				<font size="5"> Поля, отмеченные *, обязательны для заполнения.</font>
+			</p>
+			<main>
+				<form action="act.php" method="POST">
+					<table>
+						<tr class="l">
+							<td>Фамилия, Имя, Отчество на русском языке*</td>
+							<td><input type="text" placeholder="Ивлев Сергей Петрович" name="fioRus"></td>
+						</tr>
+						<tr class="r">
+							<td>Фамилия, Имя, Отчество на английском языке*</td>
+							<td><input type="text" placeholder="Ivlev Sergei Petrovich" name="fioEng"></td>
+						</tr>
+						<tr class="l">
+							<td> Выберите секцию для доклада*</td>
+							<td>
+								<select style="width: 500px; height: 50px;" name="section">
+									<option>Веб-программирование</option>
+									<option>Вычислительные системы</option>
+									<option>Компьютерные сети</option>
+									<option>Прикладная информатика</option>
+									<option>Информатизация общества</option>
+									<option>Облачные вычисления</option>
+									<option>Операционные системы</option>
+								</select>
+							</td>
+						</tr>
+						<tr class="r">
+							<td>Напишите тему доклада*</td>
+							<td><textarea name="doclad"></textarea></td>
+						</tr>
+						<tr class="l">
+							<td>Название Вашей организации*</td>
+							<td><textarea name="nameOrganization"></textarea></td>
+						</tr>
+						<tr class="r">
+							<td> Почтовый адрес Вашей организации</td>
+							<td> <textarea name="addressOrganization" placeholder="190000, Санкт-Петербург, Большой проспект, д.12,  пом. 52-13"></textarea></td>
+						</tr>
+						<tr class="l">
+							<td>Телефон мобильный для связи*</td>
+							<td><input type="tel" pattern="+7(911)XXX-XXX" name="phoneNotify" placeholder="+7(911)XXX-XХ-XX"></td>
+						</tr>
+						<tr class="r">
+							<td> E-mail для уведомлений*</td>
+							<td><input type="email" name="emailNotify" placeholder="guap41@mail.ru"></td>
+						</tr>
+						<tr class="l">
+							<td>Логин для входа на сайт*</td>
+							<td><input type="email" required="required" name="loginNotify" placeholder="guap@mail.ru"></td>
+						</tr>
+						<tr class="r">
+							<td>Пароль для входа на сайт*</td>
+							<td><input type="tel" name="parolNotify"></td>
+						</tr>
+						<tr class="l">
+							<td>Ваш почтовый адрес*</td>
+							<td><textarea name="factAddress" placeholder="190000, Санкт-Петербург, Суворовский проспект, д.15, кв 34"></textarea></td>
+						</tr>
+						<tr class="r">
+							<td>Дата рождения</td>
+							<td><input type="date" name="dateBirth" placeholder="01-02-1998"></td>
+						</tr>
+						<tr class="l">
+							<td>Забронировать номер в гостинице</td>
+							<td style="text-align:center;">Да<input class="radio1" type="radio" name="resident">Нет<input class="radio1" type="radio" name="resident"></td>
+						</tr>
+						<tr class="r">
+							<td>Для участия в несекционных мероприятиях <br> просим выбрать Ваш любимый цвет</td>
+							<td><input type="color" name="bestColor"></td>
+						</tr>
+						<tr class="l">
+							<td colspan="2" align="center"><button>Отправить</button></td>
+						</tr>
+					</table>
+				</form>
+			</main>
+		</div>
+	</body>
+</html>

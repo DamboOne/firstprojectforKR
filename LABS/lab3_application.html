@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Регистрация на форум</title>
+	<body>
+		<h1>Регистрация на форум "Время перемен"</h1>
+		<form method="post" action="lab3_application.php">
+			<input type="hidden" name="posted" value="true"><br>
+			Имя:<br>
+			<input name="firstname" type="text"><br>
+			Фамилия:<br>
+			<input name="lastname" type="text"><br>
+			Название организации:<br>
+			<input name="organization" type="text"><br><br>
+			Почтовый адрес вашей организации:<br>
+			<textarea name="address" rows="2" cols="40"></textarea><br><br>
+			Выберите секцию:
+			<select name="important">
+				<option value="Прикладная информатика">Прикладная информатика</option>
+				<option value="Облачные вычисления">Облачные вычисления</option>
+				<option value="Программная инженерия">Программная инженерия</option>
+				<option value="Вычислительные системы">Вычислительные системы</option>
+			</select><br><br>
+			Укажите форму участия: <br>
+			<input name="application" type="radio" value="resident">Очная<br>
+			<input name="application" type="radio" value="correspondence">Заочная<br>
+			<input name="application" type="radio" value="distant">Дистанционная<br><br>
+			<input type="submit" value="Создать личный кабинет">
+			<input type="reset" value="Изменить данные">
+		</form>
+	</body>
+</html>

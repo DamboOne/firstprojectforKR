@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Форма отправки заявки на участие в хакатоне</title>
+		<link rel="stylesheet" href="style.css">
+	<body>
+		<h1>Заполни и участвуй!</h1>
+		<form method="post" action="lab3_form.php">
+			<input type="hidden" name="posted" value="true">
+			<p><span>Имя лидера команды:</span><br/><input name="name_first" type="text"></p>
+			<p><span>Фамилия лидера команды:</span><br/><input name="name_last" type="text"></p>
+			<p><span>Тема соревнования:</span><br/>
+				<select name="theme_type">
+					<option value="Город в 2030">Город в 2030</option>
+					<option value="Овощи и фрукты">Овощи и фрукты</option>
+					<option value="Дистанционное управление">Дистанционное управление</option>
+				</select>
+			</p>
+			<p><span>Представительство:</span><br/>
+				<label><input name="from_who" type="radio" value="vuz">От ВУЗа</label><br/>
+				<label><input name="from_who" type="radio" value="company">От компании-работодателя</label><br/>
+				<label><input name="from_who" type="radio" value="self">Самовыдвиженцы</label>
+			</p>
+			<p><span>E-mail команды:</span><br/><input name="team_mail" type="text"></p>
+			<p><span>Название команды:</span><br/><input name="team_name" type="text"></p>
+			<p><span>Немного об опыте учасников команды (если есть):</span><br/><textarea name="team_exp" rows="15" cols="40"></textarea></p>
+			<input type="submit" value="Подать заявку">
+			<br/>
+			<input type="reset" value="Очистить форму">
+		</form>
+	</body>
+</html>

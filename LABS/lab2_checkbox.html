@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Работа с формой, использующей флажки</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1>Пожалуйста, выберите предпочитаемые вами способы оплаты обучения:</h1>
+		<form method="POST" action="lab2_checkbox.php">
+			<p><label><input name="sposob_oplati1" type="checkbox" value="Наличный"><span>Наличный</span></label></p>
+			<p><label><input name="sposob_oplati2" type="checkbox" value="По карте"><span>По карте</span></label></p>
+			<p><label><input name="sposob_oplati3" type="checkbox" value="Банковским переводом"><span>Банковским переводом</span></label></p>
+			<p><label><input name="sposob_oplati4" type="checkbox" value="Отложенный платеж"><span>"Отложенный платеж"</span></label></p>
+			<p><label><input type="submit" name="submit_form" value="Подтвердить выбор"></label></p>
+		</form>
+	</body>
+</html>

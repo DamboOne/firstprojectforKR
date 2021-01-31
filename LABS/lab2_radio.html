@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Работа с формой, использующей переключатели</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1>Пожалуйста, выберите предпочитаемый вами организационый способ обучения:</h1>
+		<form method="POST" action="lab2_radio.php">
+			<p><label><input name="sposob_obuch" type="radio" value="Очный-локальный"><span>Очный-локальный</span></label></p>
+			<p><label><input name="sposob_obuch" type="radio" value="Заочный-локальный"><span>Заочный-локальный</span></label></p>
+			<p><label><input name="sposob_obuch" type="radio" value="Очный-дистанционный"><span>Очный-дистанционный</span></label></p>
+			<p><label><input name="sposob_obuch" type="radio" value="Заочный-дистанционный"><span>Заочный-дистанционный</span></label></p>
+			<p><label><input type="submit" name="submit_form" value="Подтвердить выбор"></label></p>
+		</form>
+	</body>
+</html>

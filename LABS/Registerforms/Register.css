@@ -1,0 +1,114 @@
+.content {
+	float: left;
+	width: 1700px;
+}
+
+body {
+	background-color: #EFEEFF;
+	margin: 0px;
+	padding: 0px;
+	font-size: 20px;
+}
+
+header {
+	background-color: #ffffff;
+	height: 120px;
+	text-align: center;
+}
+
+img {
+	float: left;
+	margin: 10px;
+	margin-left: 20px;
+}
+
+header>h1 {
+	margin: 0px;
+	padding: 8px;
+	padding-left: 60px;
+	height: 50px;
+	color: black;
+	float: left;
+	font-size: 40px;
+}
+
+h1 {
+	color: black;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	padding-left: 30px;
+	font-style: italic;
+	padding-top: 5px;
+	text-align: center;
+}
+
+content>p {
+	color: black;
+	padding-left: 30px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+}
+
+td {
+	padding: 30px;
+	padding-left: 10px;
+	border-color: white;
+	border-style: solid;
+	font-family: Georgia;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.r {
+	background-color: #EFEEFF;
+}
+
+.l {
+	width: 300px;
+	background-color: #FFFFFF;
+}
+
+input {
+	font-size: 25px;
+	width: 500px;
+	height: 50px;
+	text-align: center;
+	font-family: Georgia;
+	font-weight: bold;
+}
+
+.radio1 {
+	font-size: 10px;
+	width: 30px;
+	height: 30px;
+	text-align: right;
+}
+
+textarea {
+	font-size: 30px;
+	width: 500px;
+	height: 100px;
+	font-family: Georgia;
+}
+
+select {
+	font-size: 30px;
+	width: 500px;
+	height: 50px;
+	text-align: center;
+	font-family: Georgia;
+}
+
+button {
+	font-size: 40px;
+	width: 500px;
+	background-color: #AFEEEE;
+	height: 100px;
+	font-family: Georgia;
+	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+	margin: auto;
+	font-family: Georgia;
+}
